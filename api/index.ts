@@ -1,6 +1,6 @@
 import "dotenv/config";
 import Fastify, { FastifyRequest } from "fastify";
-import { prisma, nanoid, validateData } from "../libs/index";
+import { prisma, nanoid, validateData } from "./libs/index";
 
 const server = Fastify({
   logger: true,
@@ -84,9 +84,5 @@ const start = async () => {
     process.exit(1);
   }
 };
-start();
 
-export default async (req, res) => {
-  await server.ready();
-  server.server.emit("request", req, res);
-};
+export default start();

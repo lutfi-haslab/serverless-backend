@@ -1,11 +1,16 @@
 {
   "author": "Lutfi Ikbal Majid",
   "type": "module",
+  "scripts": {
+    "vercel-build": "npx prisma generate"
+  },
   "dependencies": {
     "@prisma/client": "^5.2.0",
+    "@types/node": "^20.5.9",
     "dotenv": "^16.3.1",
     "fastify": "^4.22.2",
     "nanoid": "^4.0.2",
-    "prisma": "^5.2.0"
+    "prisma": "^5.2.0",
+    "tsx": "^3.12.8"
   }
 }
