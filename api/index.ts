@@ -74,7 +74,7 @@ server.get(
 
 const start = async () => {
   try {
-    await server.listen({ port: 3006, host: "0.0.0.0" });
+    await server.listen({ port: 3030, host: "0.0.0.0" });
 
     const address = server.server.address();
     const port = typeof address === "string" ? address : address?.port;
